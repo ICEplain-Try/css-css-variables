@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,3 +6,43 @@
 }
 
 /* Start coding here */
+
+/* ประกาศ CSS Variables */
+
+:root {
+  /* Colors */
+  --branding-color: #ff7f50;
+  --secondary-color: cornsilk;
+  --highlight-color: #d2691e;
+  --muted-color: #a9a9a9;
+
+  /* Padding Levels */
+  --padding-level-1: 1px;
+  --padding-level-2: 5px;
+  --padding-level-3: 10px;
+  --padding-level-4: 15px;
+  --padding-level-5: 20px;
+
+  /* Font Sizes */
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-extra-large: 30px;
+  --font-size-double-extra-large: 50px;
+  --font-size-triple-extra-large: 100px;
+}
+
+/* เริ่มใช้ตัวแปร CSS */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.introduction {
+  background-color: var(--secondary-color); /* ใช้สีพื้นหลัง Secondary */
+  padding: var(--padding-level-5); /* ใช้ Padding Level 5 */
+}
+
+.introduction h1 {
+  color: var(--branding-color); /* ใช้สี Branding */
+  font-size: var(--font-size-triple-extra-large); /* ใช้ขนาด Triple Extra Large */
+}
